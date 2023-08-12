@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Convert images to base64 blob image | batch convert</title>
+</head>
+<body>
+<input type="file" id="inpFile" name="inpFile" class="d-none" multiple>
+    <section class="container mt-3">
+        <div class="row pb-3">
+            <div class="col-12 text-center">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="col-12">
+                <div class="drop-wrapper">
+                    <label>Drag and drop or click here</label>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAM1BMVEUAAACen5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en5+en58YWNLtAAAAEHRSTlMAQIC/72AwnxDPcFDfj68gM7ja4AAAAc9JREFUaN7t2MFugzAQRdGxsY2xgcz/f20XVH2odfqqDiNVKXc1iyQnQUYmljvPaltUdd2q+FVWPUpdvCpJP8qCXAwofgYUPwOKn7GXCMXJmEUkQ3EzuGI3uGI3uGI3uGI3UCSKxUAzFAeDKAZjEnFSYCxViOJgEMVqcMVucMVucMVucMVucMVucMXP4Ao37Ao3nJRMDbvSlRhUsV8rrnShTcTgSqLvLNTgShNSowZXdiFF/OJftBy76J9A3hfwGj/1kEHxU++LJjKkJh0WZJCOK8KazcgqtJqsSBBeNyLxh3+kDUjK8sN6nBBFFrx2y1V+FUWCnLuRG7mRG7mRG3kFJO9Jn8SQ502tCiqLIjuCUoeR9GIEZTzOeSF446xeCB5aH+qKaD8dvu7hSRRpYVw8HV4e8+pwn8zHQgYyOSDx/yKbfK1fh6xKqhcgGzEWMSP8Zu0GBOVvjVlMCBRu2BEpu45b+nFFt2kPIpgpMi6Mquf9KJ/mRhHeeJE/TnO5GgmnU4KC2Q8JPgi2736er0ak4RMwX4VAWTVt9ZgzZoKYe3VkkevbgDQcS19bSDiKLuoXvv2kbuEcO6hnDZuSW7OIu7IJeszq0RTI1mcNG+cbX22kOIGOKQwAAAAASUVORK5CYII=" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sign text-center my-3">
+            <span class="d-block">Developed with <span style="color:red">LOVE</span> for you</span>
+        </div>
+        <div class="files-container">
+        </div>
+    </section>
+
+<br><br><br>
+<div class="container">
+    i2base64 is a simple online tool that does exactly what it says: Base64 encoding as well as fast and easy encoding. Base64 effortlessly encodes your data or decodes it into a human-readable format.</p>
+    <p>Base64 encoders are commonly used when binary data needs to be encoded, especially when data needs to be stored and transmitted on media designed to work with text. This encryption helps ensure that data remains intact during shipment. Base64 is commonly used in a number of applications, including email via MIME, as well as storing complex data in XML or JSON.</p>
+    <p>
+        <strong>1. Why BASE64 Encryption?</strong>
+        <p>Base64-encoded photos and images can be embedded using img or CSS tags, which decreases loading time for smaller images by preventing additional HTTP requests. This can be done to create replica/one-page demo pages for your clients, sign HTML emails that don't generate a bad "show images" alert on email clients, and more.</p>
+    </p>
+    <p>
+        <strong>2. Support photo templates</strong>
+    <p>This tool supports the most popular image formats. These files include .jpeg, .png, .gif, .webp, .svg, and .bmp.</p>
+    </p>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>

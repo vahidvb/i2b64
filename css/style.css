@@ -1,0 +1,139 @@
+/*start css reset*/
+* {
+
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+
+    color: #333333;
+    font-size: 14px;
+    background: #f7f7f7;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container,
+.container-fluid {
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+/*end css reset*/
+.files-container{
+    counter-reset: section;
+}
+input {
+    border: 1px solid gainsboro;
+}
+textarea{
+    width: 100%;
+    height:100%;
+    border:none;
+    color:#adadad;
+    overflow-x: clip;
+}
+.textArea-box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-radius: 10px;
+    padding: 5px;
+    height:200px;
+    direction: rtl;
+}
+.files-container img{
+    width:100%;
+    height:200px;
+    object-fit: contain;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-radius: 10px;
+    padding:5px
+}
+.files-container .row{
+    margin-top:15px;
+    box-shadow: 0 0 10px #cecece;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+.files-container .row:after{
+    content: counter(section);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #9e9f9f;
+    color: white;
+    min-width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-radius: 10px;
+    counter-increment: section;
+    text-align: center;
+    line-height: 32px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333333;
+    padding: 0 5px 0 5px;
+}
+.button-box{
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+.button-box .btn{
+    border-radius:10px;
+    border:none;
+}
+.drop-wrapper{
+    text-align:center;
+    padding:50px;
+    border: solid 2px #9e9f9f;
+    border-style: dashed;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.drop-wrapper label,.drop-wrapper i{
+    display:block;
+
+}
+.drop-wrapper i{
+    font-size:100px;
+    color:#9e9f9f;
+}
+.drop-wrapper label{
+    font-size:25px;
+    font-family:tahoma;
+    margin-bottom:25px;
+    color: #9e9f9f;
+}
+.img-box {
+    padding-left:0;
+}
+.img-box label{
+    position:absolute;
+    left: 5px;
+    bottom: 4px;
+    width: calc(100% - 22px);
+    background: rgb(158 159 159 / 50%);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 2px;
+}
+.text-center{
+    text-align: center;
+}
